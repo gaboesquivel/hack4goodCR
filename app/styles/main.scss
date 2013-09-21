@@ -1,0 +1,230 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+/**
+ * WEB FONTS
+ */
+/* Open Sans */
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+
+@import 'sass-bootstrap/lib/bootstrap';
+
+
+/**
+ * TYPOGRAPHY
+ */
+/* Titles */
+h2 {
+  text-align: center;
+  font: 300 37px 'Adelle', 'Georgia', 'Times New Roman', 'Times', serif;
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
+h3 {
+  font: 400 20px 'Open Sans', Helvetica, Arial, sans-serif;
+  margin-bottom: 20px;
+}
+h4 {
+  font: 400 16px 'Open Sans', Helvetica, Arial, sans-serif;
+  margin-bottom: 20px;
+}
+/* Paragraphs */
+p {
+  padding: 0 0 20px;
+  line-height: 1.8em;
+}
+/* Basic elements */
+small {
+  font-size: 85%;
+}
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
+cite {
+  font-style: normal;
+}
+.hidden {
+  display: none;
+}
+/* Links */
+a {
+  color: #8dc63f;
+  text-decoration: none;
+}
+
+a.no_gkslt, a.no_gkslt:hover{
+    color: #546775 !important;
+}
+
+a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+  color: #78ab33;
+  text-decoration: underline;
+}
+a:hover {
+  color: #78ab33;
+}
+
+/* layout */
+
+body {
+  position: relative;
+  padding-top: 80px;
+  height: 100%;
+  overflow: auto;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 14px;
+  color: #546775;
+  background-color: #fff;
+}
+
+/*  nav  */
+
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default a.navbar-brand {
+    font-family: 'proxima-nova', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    background-color: transparent;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+    height: 20px;
+    line-height: 20px;
+}
+.navbar-default .navbar-nav > li > a > li.active > a, 
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus,
+a.navbar-brand {
+    color: #78ab33 !important;
+
+}
+.navbar {
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #fff;
+  zoom: 1;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
+}
+
+.nav > li{
+    padding: 10px 0;
+}
+
+.navbar .brand {
+  display: block;
+  min-width: 140px;
+  max-width: 300px;
+  float: left;
+  margin-right: 5px;
+  padding: 30px 10px 30px 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  background: transparent url("../images/common/logo.png") no-repeat center center;
+  text-align: center;
+  text-indent: -9999em;
+}
+
+#info{
+    background: #ccc;
+    width: 290px;
+    text-align: center;
+    line-height: 1;
+            color:#fff;
+            float:right;
+    p{
+        padding: 0;
+        margin: 0;
+    }
+    .box{
+        padding: 20px;
+        border-top: dashed 1px #fff;
+        &:first-child{
+            border-top: none;
+        }
+    }
+    #hours{
+
+        p{
+            font-size: 55px;
+            line-height: 60px;
+            padding: 0;
+            margin: 0;
+            &#hacking{
+                font-size: 20px;
+                line-height: 14px;
+            }
+        }
+    }
+
+    #schedule{
+        p{
+            font-size: 32px;
+            line-height: 37px;
+            padding-bottom: 15px;
+            span{
+                display: block;
+                font-size: 18px;
+                line-height:18px;
+            }
+        }
+    }
+
+    #venue{
+        p{
+            font-size: 32px;
+            line-height: 37px;
+            padding-bottom: 15px;
+            span{
+                display: block;
+                font-size: 18px;
+                line-height:18px;
+            }
+        }
+    }
+}
+
+
+#inscribete{
+    background-color: #78ab33;
+border-color: #78ab33;
+}
+
+.person{
+    float: left;
+    min-width: 290px;
+    pointer: cursor;
+
+    a{ text-decoration: none;   color: #546775;}
+    img{
+        float: left;
+        margin-right: 10px;
+        width: 73px;
+        height: 73px;
+    }
+    p{
+        margin:0;
+        padding: 0;
+        &.detail{
+            font-size: 12px;
+            padding-right: 10px;
+        }
+    }
+
+}
+
+#PatrocinadoresNacionales img,
+#organizadores img{
+    max-width: 180px;
+    margin: 10px;
+}
+
+img.winner_screenshot{
+    height: 500px;
+    max-height: 500px;
+}
