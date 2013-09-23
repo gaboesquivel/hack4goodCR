@@ -198,7 +198,8 @@ border-color: #78ab33;
 .person{
     float: left;
     min-width: 290px;
-    pointer: cursor;
+        cursor: pointer;
+        margin: 10px 0;
 
     a{ text-decoration: none;   color: #546775;}
     img{
@@ -215,16 +216,78 @@ border-color: #78ab33;
             padding-right: 10px;
         }
     }
-
 }
 
-#PatrocinadoresNacionales img,
-#organizadores img{
-    max-width: 180px;
-    margin: 10px;
+.footer{
+  padding-top:50px;
+  text-align: center;
+  #devs{
+    padding-top: 20px;
+    margin:0 auto;
+    padding-left:100px;
+  }
+  div.person{
+    display: inline-block;
+    width: 250px;
+    float: none;
+
+    a{ text-decoration: none;   color: #546775;}
+    img{
+        float: left;
+        margin-right: 10px;
+        width: 50px;
+        height: 50px;
+    }
+    p{
+        text-align: left;
+        font-size: 12px;
+        &.detail{
+            font-size: 10px;
+            float: left;
+        }
+    }
+  
+  }
+}
+
+#patrocinadores-wrapper ,
+#organizadores,
+#patrocinadores-internacionales {
+  text-align: center;
+
+  img{
+    margin: 10px 24px;
+  }
+  
+}
+
+#temas-wrapper, #patrocinadores-wrapper, #premiacion-wrapper{
+  position:relative;
+}
+#temas, #patrocinadores, #premiacion{
+  z-index: 0;
+  position:absolute;
+}
+#temas{
+   top: -65px;
+}
+#patrocinadores{
+  top: -65px;
+}
+
+#premiacion{
+      top: -40px;
 }
 
 img.winner_screenshot{
     height: 450px;
     max-height: 450px;
+}
+
+.video{
+  max-width: 100% !important;
+}
+
+#edp{
+  float:right;
 }

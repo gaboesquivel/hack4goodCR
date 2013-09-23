@@ -20,8 +20,6 @@
         <![endif]-->
 
 
-        
-
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
               <div class="container">
               <!-- Brand and toggle get grouped for better mobile display -->
@@ -39,8 +37,8 @@
               <div class="collapse navbar-collapse navbar-ex1-collapse">
                
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#">Temas</a></li>
-                  <li><a href="#patrocinadoresNacionales">Patrocinadores</a></li>
+                  <li><a href="#temas">Temas</a></li>
+                  <li><a href="#patrocinadores">Patrocinadores</a></li>
                   <li><a href="#premiacion">Premiación</a></li>
                   <li>
                     <a href="http://geeklist.com/" target="_blank">Geeklist ➜</a>
@@ -86,7 +84,8 @@
 
             <hr></hr>
 
-            <div>
+            <div id="temas-wrapper">
+                <div id="temas">&nbsp;</div>
                 <h2>Temas</h2>
 
                 <p>Hack4Good busca desarrollar soluciones para el medio ambiente, desastres y emergencias, educación y el aprendizaje, el empleo, la pobreza, el hambre. En Costa Rica nuestro objetivo principal en el 2013 es crear aplicaciones para resolver los problemas logísticos del reciclaje.</p>
@@ -96,7 +95,7 @@
 
                 <p>Municipios reciclan solo 2% del total de residuos</p>
 
-                <iframe width="640" height="360" src="//www.youtube.com/embed/PlNJACBF3i4" frameborder="0" allowfullscreen></iframe>
+                <iframe class="video" width="640" height="360" src="//www.youtube.com/embed/PlNJACBF3i4" frameborder="0" allowfullscreen></iframe>
 
                 <p><br>Mitad de municipios desecha esfuerzo de casas que reciclan <a href="http://www.nacion.com/data/Mitad-municipios-desecha-esfuerzo-reciclan_0_1345265499.html" target="_blank">Reportaje de la Nación ➜</a></p>
 
@@ -105,7 +104,7 @@
                     <a target="_blank" href="http://twitter.com/yuriengelhardt">
                         <img src="https://si0.twimg.com/profile_images/1875092843/Yuri_Engelhardt_bigger.jpg"/>
                         <p class="name">Yuri Engelhardt</p>
-                        <p class="detail">Ph.D, Prof. en Visualización de Datos<br>Organizador del evento Show Me The Data</p>
+                        <p class="detail">Ph.D, Prof. en Visualización de Datos</p>
                     </a>
                 </div>
 
@@ -113,7 +112,7 @@
                     <a target="_blank"  href="https://twitter.com/mcaruanagalizia">
                         <img src="https://si0.twimg.com/profile_images/378800000398742672/e9b38e7721d77a06eba9f73535cbf5dd_bigger.jpeg"/>
                         <p class="name">Matthew Caruana</p>
-                        <p class="detail">Lead Developer en ICIJ Offshore Leaks<br> Developer at Nacion.com</p>
+                        <p class="detail">Lead Developer en ICIJ Offshore Leaks</p>
                     </a>
                 </div>
 
@@ -129,8 +128,10 @@
                 <div class="clearfix"></div>
 
 
-
-                <h3 id="premiacion">Premiación</h3>
+                <div id="premiacion-wrapper">
+                    <div id="premiacion">&nbsp;</div>
+                </div>
+                <h3>Premiación</h3>
                 <p>Habrán premios nacionales e internaionales, sin embargo el mayor premio será ayudar a hacer el mundo un mejor lugar. La ganadores a nivel mundial serán anunciado en la sede de San Francisco. Estas son alguna aplicaciones que ganaron en el hackathon pasado:  </p>
 
                   <h4>Grand Prize Winner</h4>
@@ -156,11 +157,10 @@
                   <div class="col-md-6">
                      <p><a href="#" target="_blank">Feed & Gain</a>  por Sidney Zhang, Nathaniel Wroblewski, Brandy Dettmer, Rob McQueen, Jing Jian</p>
 
-                    <p>Concepto: "Crowdsourced soluciones para acabar con el hambre. Básicamente, dándole la capacidad de las personas con alimentos para dar para que la gente cerca saben que está disponible para su recogida. A continuación, los usuarios pueden ir, recoger la comida y entregarla a personas sin hogar o con hambre. "(Nos encanta esto!)</p>
+                    <p>Concepto: "Solución de colaboración abierta distribuida para acabar con el hambre. Básicamente, dándole a las personas con alimentos la capacidad de notificar a la gente que está disponible para recogerla. Así los usuarios pueden ir a recoger la comida y entregarla a personas sin hogar o con hambre." (Nos encanta esto!)</p>
 
                     <p>Tecnologías: Twilio, FB Authentication, Geo Location, Google Map Integration, Django App, jQuery Mobile</p>
-
-                   
+           
 
                     <a target="_blank" href="https://geekli.st/sidazhang/i-helped-build-feedgain-to-end-hunger-at-gklst-hack4good">https://geekli.st/sidazhang/i-helped-build-feedgain-to-end-hunger-at-gklst-hack4good</a>
 
@@ -173,92 +173,165 @@
                   </div>
                 </div>  
    
-
                 <h3>Jurado</h3>
+                    
+                    <div class="person">
+                        <a target="_blank"  href="http://www.linkedin.com/pub/ignacio-trejos-zelaya/9/492/b84">
+                            <img src="http://m1.c.lnkd.licdn.com/media/p/2/000/073/136/02b208a.jpg"/>
+                            <p class="name">Ignacion Trejos<small> -por confirmar-</small></p>
+                            <p class="detail">Rector y Profesor Fundador de la Universidad Cenfotec</p>
+                        </a>
+                    </div>
 
-                <div class="person">
-                    <a target="_blank"  href="http://www.linkedin.com/pub/ignacio-trejos-zelaya/9/492/b84">
-                        <img src="http://m1.c.lnkd.licdn.com/media/p/2/000/073/136/02b208a.jpg"/>
-                        <p class="name">Ignacion Trejos</p>
-                        <p class="detail">Rector y Profesor Fundador de la Universidad Cenfotec</p>
-                    </a>
-                </div>
+                     <div class="person">
+                        <a target="_blank"  href="https://twitter.com/anadk">
+                            <img src="http://m1.c.lnkd.licdn.com/mpr/mpr/shrink_200_200/p/3/000/02e/0d0/10a3c35.jpg"/>
+                            <p class="name">Ana Domb <small>-por confirmar-</small></p>
+                            <p class="detail">Directora del Programa de Diseño Interactivo de la Universidad Veritas </p>
+                        </a>
+                    </div>
 
-                 <div class="person">
-                    <a target="_blank"  href="https://twitter.com/anadk">
-                        <img src="http://m1.c.lnkd.licdn.com/mpr/mpr/shrink_200_200/p/3/000/02e/0d0/10a3c35.jpg"/>
-                        <p class="name">Ana Domb</p>
-                        <p class="detail">Directora del Programa de Diseño Interactivo de la Universidad Veritas</p>
-                    </a>
-                </div>
-
-                <div class="person">
-                    <a target="_blank" href="https://twitter.com/adriangs">
-                        <img src="http://m2.c.lnkd.licdn.com/mpr/mpr/shrink_200_200/p/1/005/010/041/0846ed2.jpg"/>
-                        <p class="name">Adrían García</p>
-                        <p class="detail">Socio Fundador en Carao Ventures</p>
-                    </a>
-                </div>
-
+                    <div class="person">
+                        <a target="_blank" href="https://twitter.com/adriangs">
+                            <img src="http://m2.c.lnkd.licdn.com/mpr/mpr/shrink_200_200/p/1/005/010/041/0846ed2.jpg"/>
+                            <p class="name">Adrían García</p>
+                            <p class="detail">Socio Fundador en Carao Ventures</p>
+                        </a>
+                    </div>
 
                 <div class="clearfix"></div>
             </div>
 
             <hr></hr>
 
-            <div id="PatrocinadoresNacionales">
+            <div id="patrocinadores-wrapper"  class="row">
+                 <div id="patrocinadores"></div>
 
                 <h2>Patrocinadores en Costa Rica</h2>
 
                 <img src="images/logo_grupo_nacion.png"/>
                 <img src="images/logo_florida.png"/>
-                <img src="images/logo_ibm.png"/>
+                <img src="images/logo_ibm.jpg"/>
                 <img src="images/logo_intel.png"/>
+                <img src="images/logo_hp.jpg"/>
                 <img src="images/logo_microsoft.png"/>
                 <img src="images/logo_tigo.jpg"/>
                 <img src="images/logo_kimberly_clark.png"/>
+                <img src="images/logo_geep.jpg"/>
+                <img src="images/logo_asegire.gif"/>
+                <img src="images/logo_coca_cola.png"/>
+                <img src="images/logo_comeca.gif"/>
+                <img src="images/logo_telefonica.jpg"/>
 
                 <div class="clearfix"></div>
 
-                <h3>Media and Partners</h3>
+                <h3>Medios y Colaboradores</h3>
                 <img src="images/logo_quiros_tanzi.jpg"/>
                 <img src="images/logo_nacion.png"/>
                 <img src="images/logo_tico_times.jpg"/>
                 <img src="images/logo_red_bull.jpg"/>
                 <img src="images/logo_pizza_hut.png"/>
                 <img src="images/logo_teletica.png"/>
+                <img src="images/logo_el_financiero.gif"/>
 
                 <div class="clearfix"></div>
             </div>
 
             <hr></hr>
 
-
-            <div class="row">
                 <h2>Nota desde el blog de Geeklist</h2>
                 <p>En Geeklist tomamos contexto y de calidad para los desarrolladores con el máximo respeto</p>
 
-<p>Para nuestra nueva serie de hackathons, no queríamos que los participantes tratan de encontrar un problema ( que pueden o no existir en realidad ), construir un modelo de negocio en torno a ella, y salir con un prototipo, pitch y premio por pasar su tiempo en algo que podrían haber construido en cualquier parte. </p>
+<p>Para nuestra serie de hackathons no queríamos que los participantes tratáran de encontrar un problema ( que pueden o no existir en realidad ), construir un modelo de negocio en torno a ella y salir con un prototipo, pitch y premio por pasar su tiempo en algo que podrían haber construido en cualquier parte.</p>
 
-<p>Al planificar nuestra Geeklist #hack4good elegimos un camino diferente. Hay problemas que ya existen, problemas que afectan la vida de las personas que no tienen el más reciente teléfono inteligente, personas que no están en el tráfico, las personas que no tienen conflictos de programación o perfiles de LinkedIn, o incluso nisiquiera un plan para la cena de esta noche, o mañana. Hay problemas por causa de terremotos, inundaciones, incendios y hambrunas. Hay verticales tan grandes como 99% de la población. Hemos elegido para hacer de este un hackathon para bien siempre por encima de todo.</p>
+<p>Al planificar nuestra Geeklist #hack4good elegimos un camino diferente. Hay problemas que ya existen, problemas que afectan la vida de las personas que no tienen el más reciente teléfono inteligente, personas que no están en el tráfico, las personas que no tienen conflictos de programación o perfiles de LinkedIn, o incluso nisiquiera un plan para la cena de esta noche, o mañana. Hay problemas por causa de terremotos, inundaciones, incendios y hambrunas. Hay verticales tan grandes como 99% de la población. Hemos elegido hacer de este un hackathon un evento para bien siempre por encima de todo.</p>
 
-<p>Por cierto, no somos los primeros en alentar a los hackers a pasar sus ciclos adicionales sobre los problemas que aquejan a la sociedad, pero tuvimos la oportunidad de hacerlo el tema del primer gran evento de Geeklist (y los acontecimientos futuros ), y al hacerlo, esperamos inspirar a más organizadores y patrocinadores a considerar lo que un hackathon puede dar, y se optó por hacer el bien. Además, no queríamos atraer a la gente al evento por razones equivocadas, por lo que nuestro formulario de registro no incluyó premios o reconocimientos. Queremos que los participantes entiendan lo que esperábamos lograr, apoyarnos en la apuesta en contra del status quo, y elegir a atraer a los hackers para un propósito diferente</p>
+<p>Por cierto, no somos los primeros en alentar a los hackers a pasar su ciclos adicionales a los problemas que aquejan a la sociedad, pero tuvimos la oportunidad de hacerlo el tema del primer gran evento de Geeklist (y los eventos futuros ), y al hacerlo, esperamos inspirar a más organizadores y patrocinadores a considerar lo que un hackathon puede dar, y se optó por hacer el bien. Además, no queríamos atraer a la gente al evento por razones equivocadas, por lo que nuestro formulario de registro no incluyó premios o reconocimientos. Queremos que los participantes entiendan lo que esperábamos lograr, apoyarnos en la apuesta en contra del status quo, y elegir a atraer a los hackers para un propósito diferente</p>
 
-                 <div class="person">
+                 <div class="person" id="edp">
                     <a target="_blank"  href="https://geekli.st/EdP">
                         <img src="https://graph.facebook.com/517083839/picture?type=large"/>
                         <p class="name">Ed Palumbo</p>
-                        <p class="detail">Director of Business Development, Geekli.st</p>
+                        <p class="detail">Director de Desarrollo de Negocio, Geekli.st</p>
                     </a>
                 </div>
+                <div class="clearfix"></div>
 
-            </div>
+            <hr></hr>
 
-            <div>
+            <div id="patrocinadores-internacionales">
 
                 <h2>Patrocinadores Internacionales</h2>
 
-                <img src="images/patrocinadores_internacionales.png"/>
+               <a href="https://developers.google.com" rel="external" target="_blank">
+                  <img src="images/googledevelopers.png" alt="Google Developers supports #hack4good">
+                </a>
+                <h3>
+                  Gold sponsors
+                </h3>
+                <a href="http://www.deezer.com" rel="external" target="_blank">
+                  <img src="images/deezer.png" alt="Deezer supports #hack4good">
+                </a>
+                <a href="http://pivotallabs.com" rel="external" target="_blank">
+                  <img src="images/pivotallabs.png" alt="Pivotal Labs supports #hack4good">
+                </a>
+                <h3>
+                  Silver sponsors
+                </h3>
+                <a href="http://www.joyent.com" rel="external" target="_blank">
+                  <img src="images/joyent.png" alt="Joyent supports #hack4good">
+                </a>
+                <a href="http://newrelic.com" rel="external" target="_blank">
+                  <img src="images/newrelic.png" alt="New relic supports #hack4good">
+                </a>
+                <a href="https://www.bountysource.com" rel="external" target="_blank">
+                  <img src="images/bountysource.png" alt="Bountysource supports #hack4good">
+                </a>
+                <a href="http://www.mandrill.com" rel="external" target="_blank">
+                  <img src="images/mandrill.png" alt="Mandrill supports #hack4good">
+                </a>
+                <a href="http://www.actuate.com" rel="external" target="_blank">
+                  <img src="images/actuate.png" alt="Actuate supports #hack4good">
+                </a>
+                <a href="http://www.leadnomics.com" rel="external" target="_blank">
+                  <img src="images/leadnomics.png" alt="Leadnomics supports #hack4good">
+                </a>
+                <a href="http://www.50onred.com" rel="external" target="_blank">
+                  <img src="images/50onred.png" alt="50onRed supports #hack4good">
+                </a>
+                <h3>
+                  Media and partner sponsors
+                </h3>
+                <a href="https://www.gandi.net" rel="external" target="_blank">
+                  <img src="images/gandi.png" alt="Gandi.net supports #hack4good">
+                </a>
+                <a href="https://modulus.io" rel="external" target="_blank">
+                  <img src="images/modulus.png" alt="Modulus supports #hack4good">
+                </a>
+                <a href="http://www.startupmonthly.org" rel="external" target="_blank">
+                  <img src="images/startupmonthly.png" alt="Startup Monthly supports #hack4good">
+                </a>
+                <a href="http://webshell.io" rel="external" target="_blank">
+                  <img src="images/webshell.png" alt="WebShell supports #hack4good">
+                </a>
+                <a href="https://oauth.io" rel="external" target="_blank">
+                  <img src="images/oauth.png" alt="OAuth.io supports #hack4good">
+                </a>
+                <a href="http://sailsjs.org" rel="external" target="_blank">
+                  <img src="images/sailsjs.png" alt="Sails.js supports #hack4good">
+                </a>
+                <a href="http://appsify.me" rel="external" target="_blank">
+                  <img src="images/appsifyme.png" alt="Appsifyme supports #hack4good">
+                </a>
+                <a href="http://www.rudebaguette.com" rel="external" target="_blank">
+                  <img src="images/rudebaguette.png" alt="Rude Baguette supports #hack4good">
+                </a>
+                <a href="http://www.eventbrite.com" rel="external" target="_blank">
+                  <img src="images/eventbrite.png" alt="Eventbrite supports #hack4good">
+                </a>
+                <a href="http://spitfireathlete.com" rel="external" target="_blank">
+                  <img src="images/spitfireathlete.png" alt="SpitfireAthlete supports #hack4good">
+                </a>
                 
                 <div class="clearfix"></div>
             </div>
@@ -269,12 +342,21 @@
 
 
                 <h2>Organizan</h2>
-
-                <img src="images/logo_geeklist.png"/>
-                <img src="images/logo_gaboesquivel.png"/>
-                <img src="images/logo_carao_ventures.jpg"/>
-                <img src="images/logo_sistemas_educativos_integrales.png"/>
-                <img src="images/logo_aliarse.jpg"/>
+                <a href="http://geekli.st" rel="external" target="_blank">
+                    <img src="images/logo_geeklist.png"/>
+                </a>
+                <a href="http://gaboesquivel.com" rel="external" target="_blank">
+                    <img src="images/logo_gaboesquivel.png"/>
+                </a>
+                <a href="http://caraov.com" rel="external" target="_blank">
+                    <img src="images/logo_carao_ventures.png"/>
+                </a>
+                <a href="#" rel="external" target="_blank">
+                    <img src="images/logo_sistemas_educativos_integrales.png"/>
+                </a>
+                <a href="http://aliarse.org" rel="external" target="_blank">
+                    <img src="images/logo_aliarse.jpg"/>
+                </a>
                 
 
                 <div class="clearfix"></div>
@@ -282,22 +364,22 @@
 
 
             <div class="footer">
-               <h3>desarrollado web por: </h3>
-               <div class="person">
-                    <a target="_blank" href="http://twitter.com/gaboesquivel">
-                        <img src="https://si0.twimg.com/profile_images/378800000478790981/a7d1d13331bdf05f859cce84cf5c6744_bigger.jpeg"/>
-                        <p class="name">Gabo Esquivel</p>
-                        <p class="detail">Javascript Developer<br> Instigator at @CostaRicaJS</p>
-                    </a>
-                </div>
+               <h6>desarrollo web</h6>
+               <ul id="devs">
+                   <div class="person">
+                        <a target="_blank" href="http://twitter.com/gaboesquivel">
+                            <img src="https://si0.twimg.com/profile_images/378800000478790981/a7d1d13331bdf05f859cce84cf5c6744_bigger.jpeg"/>
+                            <p class="name">Gabo Esquivel</p>
+                            <p class="detail">Javascript Developer<br> Instigator at @CostaRicaJS</p>
+                        </a>
+                    </div>
 
-                 <div class="person">
-                    <a target="_blank" href="http://twitter.com/fmontes">
-                        <img src="https://si0.twimg.com/profile_images/3698844042/8665e8dd25ebb9ca0f65c1abf60a19db_bigger.jpeg"/>
-                        <p class="name">Freddy Montes</p>
-                        <p class="detail">Front End Developer<br> Co-organizer at @CostaRicaJS</p>
-                    </a>
-                </div>
+                     <div class="person">
+                            <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash2/c137.0.686.686/s160x160/1233529_10201314831505213_1099476819_n.jpg"/>
+                            <p class="name">Andrea Zuñiga</p>
+                            <p class="detail">Front End Developer</p> 
+                    </div>
+                </ul>
             </div>
 
         </div>
@@ -319,13 +401,6 @@
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
 
-        <!-- build:js scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
-
-        <!-- build:js(.tmp) scripts/coffee.js -->
-        <script src="scripts/hello.js"></script>
-        <!-- endbuild -->
 
         <!-- build:js scripts/plugins.js -->
         <script src="bower_components/sass-bootstrap/js/affix.js"></script>
