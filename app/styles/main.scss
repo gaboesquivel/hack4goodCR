@@ -218,6 +218,8 @@ border-color: #78ab33;
     }
 }
 
+
+
 .footer{
   padding-top:50px;
   text-align: center;
@@ -249,6 +251,20 @@ border-color: #78ab33;
   
   }
 }
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) { 
+    #devs{
+      margin:0 auto;
+      padding:0 !important;
+      div.person{
+        display: inline-block;
+        width: 250px;
+      }
+    }
+}
+
 
 #patrocinadores-wrapper ,
 #organizadores,
@@ -291,3 +307,5 @@ img.winner_screenshot{
 #edp{
   float:right;
 }
+
+

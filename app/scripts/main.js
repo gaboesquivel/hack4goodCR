@@ -1,1 +1,3 @@
-console.log('\'Allo \'Allo!');
+$(".navbar-nav a").on("click", function(){
+
+});
