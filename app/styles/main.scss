@@ -308,4 +308,12 @@ img.winner_screenshot{
   float:right;
 }
 
+//Quick fix for top bar
 
+@media (min-width: 768px){ 
+
+  .overflow-visible {
+    overflow:visible!important;
+  }
+
+}
