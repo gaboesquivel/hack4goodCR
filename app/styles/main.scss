@@ -1,4 +1,7 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+$gray-lighter: #dbdbdb;
+$text-color: #546775;
+
 /**
  * WEB FONTS
  */
@@ -13,78 +16,118 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
  * TYPOGRAPHY
  */
 /* Titles */
+h1 {
+  font-family: 'Adelle', 'Georgia', 'Times New Roman', 'Times', serif;
+}
+
 h2 {
   text-align: center;
   font: 300 37px 'Adelle', 'Georgia', 'Times New Roman', 'Times', serif;
   margin-bottom: 40px;
   line-height: 1.2;
 }
+
 h3 {
   font: 400 20px 'Open Sans', Helvetica, Arial, sans-serif;
   margin-bottom: 20px;
 }
+
 h4 {
   font: 400 16px 'Open Sans', Helvetica, Arial, sans-serif;
   margin-bottom: 20px;
 }
+
 /* Paragraphs */
 p {
   padding: 0 0 20px;
   line-height: 1.8em;
 }
+
 /* Basic elements */
 small {
   font-size: 85%;
 }
+
 strong {
   font-weight: bold;
 }
+
 em {
   font-style: italic;
 }
+
 cite {
   font-style: normal;
 }
+
 .hidden {
   display: none;
 }
+
+.page-header {
+  text-align: center;
+}
+
 /* Links */
 a {
   color: #8dc63f;
   text-decoration: none;
+
+  &:hover {
+    color: #78ab33;
+  }
+
+  &:focus {
+    outline: thin dotted #333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+    color: #78ab33;
+    text-decoration: underline;
+  }
 }
 
 a.no_gkslt, a.no_gkslt:hover{
-    color: #546775 !important;
-}
-
-a:focus {
-  outline: thin dotted #333;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-  color: #78ab33;
-  text-decoration: underline;
-}
-a:hover {
-  color: #78ab33;
+    color: $text-color !important;
 }
 
 /* layout */
 
 body {
   position: relative;
-  padding-top: 80px;
+  padding-top: 40px;
   height: 100%;
   overflow: auto;
   font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-size: 14px;
-  color: #546775;
+  color: $text-color;
   background-color: #fff;
 }
 
+.section-wrapper {
+  border-bottom: solid 1px $gray-lighter;
+  padding: 20px 0 40px;
+}
+
+.bienvenidos-wrapper {
+  background-color: #f5f5f5;
+}
+
+.patrocinadores-internacionales {
+  text-align: center;
+
+  a {
+    display: inline-block;
+    margin: 10px 20px;
+  }
+
+  .sponsor-box {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 0 100px;
+  }
+}
+
 /*  nav  */
-
-
 .navbar-default .navbar-nav > li > a,
 .navbar-default a.navbar-brand {
     font-family: 'proxima-nova', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
@@ -130,27 +173,27 @@ a.navbar-brand {
   text-indent: -9999em;
 }
 
-#info{
-    background: #ccc;
+#info {
+    background: #fff;
     width: 290px;
     text-align: center;
     line-height: 1;
-            color:#fff;
-            float:right;
-    p{
+    color: $text-color;
+    float: right;
+    p {
         padding: 0;
         margin: 0;
     }
-    .box{
+    .box {
         padding: 20px;
-        border-top: dashed 1px #fff;
+        border-top: dashed 1px $gray-lighter;
         &:first-child{
             border-top: none;
         }
     }
-    #hours{
+    #hours {
 
-        p{
+        p {
             font-size: 55px;
             line-height: 60px;
             padding: 0;
@@ -162,12 +205,13 @@ a.navbar-brand {
         }
     }
 
-    #schedule{
-        p{
+    #schedule {
+        p {
             font-size: 32px;
             line-height: 37px;
             padding-bottom: 15px;
-            span{
+
+            span {
                 display: block;
                 font-size: 18px;
                 line-height:18px;
@@ -175,12 +219,13 @@ a.navbar-brand {
         }
     }
 
-    #venue{
-        p{
+    #venue {
+        p {
             font-size: 32px;
             line-height: 37px;
             padding-bottom: 15px;
-            span{
+
+            span {
                 display: block;
                 font-size: 18px;
                 line-height:18px;
@@ -189,135 +234,142 @@ a.navbar-brand {
     }
 }
 
-
-#inscribete{
+#inscribete {
     background-color: #78ab33;
 border-color: #78ab33;
 }
 
-.person{
-    float: left;
-    min-width: 290px;
-        cursor: pointer;
-        margin: 10px 0;
+.person {
+  float: left;
+  min-width: 290px;
+  cursor: pointer;
+  margin: 10px 0;
 
-    a{ text-decoration: none;   color: #546775;}
-    img{
-        float: left;
-        margin-right: 10px;
-        width: 73px;
-        height: 73px;
+  a {
+    text-decoration: none;
+    color: $text-color;
+  }
+  img {
+    float: left;
+    margin-right: 10px;
+    width: 73px;
+    height: 73px;
+  }
+  p {
+    margin:0;
+    padding: 0;
+    &.detail{
+        font-size: 12px;
+        padding-right: 10px;
     }
-    p{
-        margin:0;
-        padding: 0;
-        &.detail{
-            font-size: 12px;
-            padding-right: 10px;
-        }
-    }
+  }
 }
 
 
 
-.footer{
+.footer {
   padding-top:50px;
   text-align: center;
-  #devs{
+
+  #devs {
     padding-top: 20px;
     margin:0 auto;
     padding-left:100px;
   }
-  div.person{
+  div.person {
     display: inline-block;
     width: 250px;
     float: none;
 
-    a{ text-decoration: none;   color: #546775;}
-    img{
-        float: left;
-        margin-right: 10px;
-        width: 50px;
-        height: 50px;
+    a {
+      text-decoration: none;
+      color: $text-color;
     }
-    p{
-        text-align: left;
-        font-size: 12px;
-        &.detail{
-            font-size: 10px;
-            float: left;
-        }
+
+    img {
+      float: left;
+      margin-right: 10px;
+      width: 50px;
+      height: 50px;
     }
-  
+    p {
+      text-align: left;
+      font-size: 12px;
+
+      &.detail {
+          font-size: 10px;
+          float: left;
+      }
+    }
   }
 }
 
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 568px) { 
-    #devs{
-      margin:0 auto;
-      padding:0 !important;
-      div.person{
-        display: inline-block;
-        width: 250px;
-      }
+  #devs {
+    margin:0 auto;
+    padding:0 !important;
+
+    div.person {
+      display: inline-block;
+      width: 250px;
     }
+  }
 }
 
 
 #patrocinadores-wrapper ,
-#organizadores,
-#patrocinadores-internacionales {
+#organizadores-wrapper,
+#patrocinadores-internacionales-wrapper {
   text-align: center;
 
-  img{
+  img {
     margin: 10px 24px;
   }
-  
 }
 
-#temas-wrapper, #patrocinadores-wrapper, #premiacion-wrapper{
+#temas-wrapper, #patrocinadores-wrapper, #premiacion-wrapper {
   position:relative;
 }
-#temas, #patrocinadores, #premiacion{
+
+#temas, #patrocinadores, #premiacion {
   z-index: 0;
   position:absolute;
 }
-#temas{
+
+#temas {
    top: -65px;
 }
-#patrocinadores{
+
+#patrocinadores {
   top: -65px;
 }
 
-#premiacion{
-      top: -40px;
+#premiacion {
+  top: -40px;
 }
 
-img.winner_screenshot{
-    height: 450px;
-    max-height: 450px;
+img.winner_screenshot {
+  height: 450px;
+  max-height: 450px;
 }
 
-.video{
+.video {
   max-width: 100% !important;
 }
 
-#edp{
+#edp {
   float:right;
 }
 
 //Quick fix for top bar
-
 @media (min-width: 768px){ 
-
   .overflow-visible {
     overflow:visible!important;
   }
-
 }
 
-hr{
+hr {
   margin: 20px 0;
 }
