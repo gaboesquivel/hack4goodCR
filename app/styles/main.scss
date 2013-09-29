@@ -127,6 +127,10 @@ body {
 }
 
 /*  nav  */
+.container > .navbar-header {
+height: 67px;
+}
+
 .navbar-default .navbar-nav > li > a,
 .navbar-default a.navbar-brand {
     font-family: 'proxima-nova', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
@@ -143,7 +147,9 @@ body {
 .navbar-default .navbar-nav > li > a:focus,
 a.navbar-brand {
     color: #78ab33 !important;
-
+    span{
+      color: #979faa;
+    }
 }
 .navbar {
   padding-left: 15px;
